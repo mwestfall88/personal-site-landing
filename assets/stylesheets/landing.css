@@ -1,0 +1,220 @@
+/*
+=========================================
+Reset
+=========================================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+=========================================
+Custom Styles
+=========================================
+*/
+
+body{
+	font: 200 16px/21px "Raleway", Arial, sans-serif;/*Get rid of this later*/
+	background-color: #d7dde4;
+}
+
+/*
+==============================
+Grid
+===========================
+*/
+
+*,
+*:before,
+*:after {
+	  -webkit-box-sizing: border-box;
+   		 -moz-box-sizing: border-box;
+        	  box-sizing: border-box;
+}
+.container{
+	/*background-color: hsla(270, 60%, 20%, 0.2);*/
+	margin: 0 auto;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.col-1-3, 
+.col-2-3,
+.col-1-2{
+	display: inline-block;
+	vertical-align: top;
+}
+
+@media only screen and (min-width: 768px){
+.col-1-2{
+	width: 50%;
+}
+.col-1-3 {
+	width: 30.33%;
+}
+.col-2-3 {
+	width: 60.66%;
+}
+}
+
+.col-left{
+	border-right: 1px solid white;
+	border-top: 2px solid white;
+}
+.col-right{
+	border-left: 1px solid white;
+	border-top: 2px solid white;
+}
+.row{
+	width: 100%;
+	padding: 0 0 0 0;/*22px 0 22px 0;*/
+	position: relative;
+}
+
+/*
+==============================
+Typography
+==============================
+*/
+
+h1, h3, h4, h5, p {
+	margin: auto;
+	margin-bottom: 22px;
+}
+h1, h2, h3, h4, h5{
+	color: #333;
+	text-align: center;
+}
+h1{
+	font-size: 36px;
+	line-height: 44px;
+	font-weight: 700;
+}
+h2{
+	font-size: 24px;
+	line-height: 44px;
+	font-weight: 200;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+strong {
+  font-weight: 400;
+}
+
+/*
+==============================
+Links
+==============================
+*/
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+/*
+==============================
+Home Page
+==============================
+*/
+
+.hero{
+	padding: 22px 0px 66px 0px;
+	text-align: center;
+}
+.logo{
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	width: 375px;
+}
+h1.logo{
+	font-weight: 200;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.thick{
+	font-weight: 700;
+}
+
+
+#contact h1{
+	font-size: 72px;
+	font-weight: 200;
+	padding-top: 150px;
+	padding-bottom: 40px;
+}
+#contact i{
+	padding: 10px 10px 10px 10px;
+	width: 100%;
+}
+@media only screen and (min-width: 480px){
+#contact i{
+	padding: 10px 10px 10px 10px;
+	width: 18%;
+}
+/*
+==============================
+jQuery Classes
+==============================
+*/
+
+.hover-teaser{
+	color: black;
+}
+.transparent{
+	opacity: 0;
+}
+.dark-text{
+	color: #3f3250;
+}
+.hidden{
+	display: none;
+}
